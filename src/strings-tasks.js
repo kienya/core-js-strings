@@ -153,7 +153,7 @@ function removeFirstOccurrences(str, value) {
   const index = str.indexOf(value);
   const str1 = str.slice(0, index);
   const str2 = str.slice(index + value.length);
-  return str.indexOf(value) !== -1 ? str1 + str2 : str;
+  return index !== -1 ? str1 + str2 : str;
 }
 
 /**
